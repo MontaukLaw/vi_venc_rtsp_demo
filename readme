@@ -1,0 +1,5 @@
+20221129
+vi: 1920x1080
+vi->venc->rtsp, no rga, no resize
+
+alientek rv1126 ev-board, sdk: 2.2.5
