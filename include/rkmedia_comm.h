@@ -29,6 +29,18 @@ void init_isp(RK_S32 s32CamId, RK_U32 fps, RK_CHAR *pIqfilesPath);
 
 int unbind_vi_venc(RK_S32 viChn, RK_S32 vencChn);
 
+int create_rga_chn(RK_S32 rgaChn, RK_U32 u32WidthIn, RK_U32 u32HeightIn, RK_U32 u32WidthOut, RK_U32 u32HeightOut);
+
+int bind_vi_rga(RK_S32 cameraId, RK_U32 viChnId, RK_U32 rgaChnId);
+
+int bind_rga_venc(RK_S32 rgaChnId, RK_S32 vencChnId);
+
+int unbind_vi_vga(RK_S32 viChn, RK_S32 vgaChn);
+
+int unbind_vga_venc(RK_S32 vgaChn, RK_S32 vencChn);
+
+int destroy_vga_chn(RK_U32 vgaChn);
+
 #ifdef __cplusplus
 }
 #endif

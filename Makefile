@@ -35,6 +35,7 @@ CFLAGS += -DRKAIQ
 SAMPLE_COMMON := ../common/sample_common_isp.c
 
 all:
-	$(GCC) src/my_rtsp_demo.c src/rkmedia_comm.c src/rtsp_comm.c $(SAMPLE_COMMON) $(LIB_FILES) $(LD_FLAGS) $(CFLAGS) -o build/my_rtsp_demo --sysroot=$(SYSROOT)
+	$(GCC) src/my_rga_rtsp_demo.c src/rkmedia_comm.c src/rtsp_comm.c $(SAMPLE_COMMON) $(LIB_FILES) $(LD_FLAGS) $(CFLAGS) -o build/my_rga_rtsp_demo --sysroot=$(SYSROOT)
+	# $(GCC) src/my_rtsp_demo.c src/rkmedia_comm.c src/rtsp_comm.c $(SAMPLE_COMMON) $(LIB_FILES) $(LD_FLAGS) $(CFLAGS) -o build/my_rtsp_demo --sysroot=$(SYSROOT)
 	$(hide)$(ECHO) "Build Done ..."
 
