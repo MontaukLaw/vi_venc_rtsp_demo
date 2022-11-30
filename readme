@@ -1,4 +1,10 @@
 20221129
+add my_rga_rts_demo.c
+to test vi->rga->venc
+and resize in rga
+tested on alientek rv1126
+
+20221129
 vi: 1920x1080
 vi->venc->rtsp, no rga, no resize
 
